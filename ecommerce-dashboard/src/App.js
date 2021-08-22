@@ -20,7 +20,7 @@ function App() {
           <AddProduct />
         </Route>
 
-        <Route path="/update">
+        <Route path="/update/:id">
           <UpdateProduct />
         </Route>
 

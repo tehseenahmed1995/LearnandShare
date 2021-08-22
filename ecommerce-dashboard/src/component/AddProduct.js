@@ -17,7 +17,7 @@ function AddProduct()
             method: "POST",
             body: formData
         });
-
+        alert("product added successfully")
     }
     return(
         <>
@@ -31,7 +31,7 @@ function AddProduct()
             <br/>
             <input type="number" onChange={(e)=>setPrice(e.target.value)}  className="form-control" name="price" placeholder="Price" ></input>
             <br/>
-            <input type="file" onChange={(e)=>setFilepath(e.target.value)}  className="form-control" name="file_path" placeholder="File" ></input>
+            <input type="file" onChange={(e)=>setFilepath(e.target.files[0])}  className="form-control" name="file_path" placeholder="File" ></input>
             <br/>
             <button onClick={addProduct} className="btn btn-primary">Add Product</button>
             </div>

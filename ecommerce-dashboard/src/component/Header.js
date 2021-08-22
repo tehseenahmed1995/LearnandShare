@@ -22,7 +22,6 @@ function Header()
                         <>
                         <Link to="/">List Products</Link>
                         <Link to="/add">Add Products</Link>
-                        <Link to="/update">Update Products</Link>
                         </>
                         :
                         <>
